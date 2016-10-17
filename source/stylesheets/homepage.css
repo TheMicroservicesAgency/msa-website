@@ -2,22 +2,25 @@
  * Custom css only applied to the website homepage
  */
 
+
 body {
     text-align: center;
     font-size: 1em;
 }
 
 .content {
+    margin-top: 20%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #282A2E;
+    padding: 30px;
 }
 
 .header {
     font-family: 'Open Sans', sans-serif;
     font-size: 3.25em;
-    margin-top: 35%;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.65em;
     border-bottom: 1px solid #0bbf4e;
 }
 
@@ -50,4 +53,11 @@ a:hover {
     background: #0bbf4e;
     color: white;
     transition: all 0.15s linear;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
 }
