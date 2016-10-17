@@ -1,0 +1,47 @@
+/*
+ * CSS that is applied to every page on the website
+ */
+@charset "utf-8";
+@import "normalize.css";
+@import "pure.min.css";
+
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+::selection {
+  background: #0bbf4e; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #0bbf4e; /* Gecko Browsers */
+}
+
+body {
+  background: #282A2E;
+  color: white;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+a:hover {
+  background: #0bbf4e;
+  transition: all 0.15s linear;
+}

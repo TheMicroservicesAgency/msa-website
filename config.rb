@@ -42,3 +42,16 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+
+###
+# Custom settings
+###
+
+# Pretty urls
+# https://middlemanapp.com/advanced/pretty_urls/
+activate :directory_indexes
+
+# Parse Markdown .md files
+#
+set :markdown_engine, :redcarpet

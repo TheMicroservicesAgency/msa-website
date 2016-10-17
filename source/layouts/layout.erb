@@ -1,20 +1,94 @@
 <!doctype html>
 <html>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+        <title><%= current_page.data.title || "MSA" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <%= stylesheet_link_tag :pure_side_menu %>
+        <%= stylesheet_link_tag :site %>
+        <%= javascript_include_tag :all %>
 
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
-  </head>
+    </head>
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+    <body class="<%= page_classes %>">
+
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Menu toggle -->
+                <span></span>
+                <!-- Hamburger icon -->
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="/">The MSA</a>
+
+                    <ul class="pure-menu-list">
+
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Homepage</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The MSA Standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices" class="pure-menu-link">All the services</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="" class="pure-menu-item">Recently added</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/ms1" class="pure-menu-link">MS1</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/ms2" class="pure-menu-link">MS2</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/ms2" class="pure-menu-link">MS2</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/faq" class="pure-menu-link">FAQ</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Contribute</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/about" class="pure-menu-link">About</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+
+                <div class="header">
+                    <h1><%= current_page.data.title%></h1>
+                </div>
+
+                <div class="content">
+                    <%= yield %>
+                </div>
+
+            </div>
+        </div>
+
+        <%= javascript_include_tag :ui %>
+    </body>
 </html>
