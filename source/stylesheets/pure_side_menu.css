@@ -188,6 +188,8 @@ small screens. */
     .header, .content {
         padding-left: 2em;
         padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: .5em;
     }
     #layout {
         padding-left: 200px;
