@@ -7,7 +7,7 @@
 
         <title><%= current_page.data.title || "MSA" %></title>
 
-        <%= stylesheet_link_tag :pure_side_menu %>
+        <%= stylesheet_link_tag :sidemenu %>
         <%= stylesheet_link_tag :site %>
         <%= javascript_include_tag :all %>
 
@@ -33,7 +33,15 @@
                         </li>
 
                         <li class="pure-menu-item">
-                            <a href="/standard" class="pure-menu-link">The MSA Standard</a>
+                            <a href="/standard" class="pure-menu-link">The MSA standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The MSA templates</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Suggested Tools</a>
                         </li>
 
                         <li class="pure-menu-item menu-item-divided "></li>
@@ -46,35 +54,13 @@
                             <a href="" class="pure-menu-item">Recently added</a>
                         </li>
 
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms1" class="pure-menu-link">MS1</a>
-                        </li>
+                        <% data.microservices.microservices.each do |ms| %>
 
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS2</a>
-                        </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/<%= ms.name %>" class="pure-menu-link"><%= ms.name %></a>
+                            </li>
 
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS2</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS32</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS24</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS22</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS245</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS432</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/microservices/ms2" class="pure-menu-link">MS422</a>
-                        </li>
+                        <% end %>
 
                         <li class="pure-menu-item menu-item-divided "></li>
 
