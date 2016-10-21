@@ -1,0 +1,28 @@
+{
+	"templates": [
+		{
+			"name": "Python / Flask",
+			"description": ""
+		},
+		{
+			"name": "Python / Bottle",
+			"description": ""
+		},
+		{
+			"name": "Ruby / Sinatra",
+			"description": ""
+		},
+		{
+			"name": "Java / Spring Boot",
+			"description": ""
+		},
+		{
+			"name": "Java / Spark",
+			"description": ""
+		},
+		{
+			"name": "NodeJS / Express",
+			"description": ""
+		}
+	]
+}
