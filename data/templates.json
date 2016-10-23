@@ -5,15 +5,7 @@
 			"description": ""
 		},
 		{
-			"name": "Python / Bottle",
-			"description": ""
-		},
-		{
 			"name": "Ruby / Sinatra",
-			"description": ""
-		},
-		{
-			"name": "Java / Spring Boot",
 			"description": ""
 		},
 		{
@@ -21,7 +13,7 @@
 			"description": ""
 		},
 		{
-			"name": "NodeJS / Express",
+			"name": "Node.js / Express",
 			"description": ""
 		}
 	]

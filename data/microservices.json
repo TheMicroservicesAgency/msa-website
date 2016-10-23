@@ -1,24 +1,65 @@
 {
-	"microservices": [
-		{
-			"name": "MS1",
-			"description": "After producing two cars with alphanumeric designations, Lamborghini once again turned to the bull breeder for inspiration."
-		},
-		{
-			"name": "MS2",
-			"description": "Don Eduardo was filled with pride when he learned that Ferruccio had named a car for his family and their line of bulls."
-		},
-		{
-			"name": "MS3",
-			"description": "The automaker would continue to draw upon the bullfighting connection in future years."
-		},
-		{
-			"name": "MS4",
-			"description": "After World War II, Lamborghini opened a garage in Pieve di Cento."
-		},
-		{
-			"name": "MS5",
-			"description": "In his spare time, Lamborghini modified an old Fiat Topolino he had purchased."
-		}
-	]
+   "microservices":[
+      {
+         "name":"msa-httpbin",
+         "version":"1.0.0",
+         "description":"HTTP Request & Response Service. Useful for testing HTTP REST tools."
+      },
+      {
+         "name":"msa-corpora",
+         "version":"1.0.0",
+         "description":"A collection of small corpuses of interesting data."
+      },
+      {
+         "name":"msa-faker",
+         "version":"1.0.0",
+         "description":"Fake data generator. Can generate names, addresses, phone numbers, etc. "
+      },
+      {
+         "name":"msa-itunes-colors",
+         "version":"1.0.0",
+         "description":"Extract a color palette from an image. Based on iTunes 11 album display."
+      },
+      {
+         "name":"msa-color-thief",
+         "version":"1.0.0",
+         "description":"Extract the dominant color from an image."
+      },
+      {
+         "name":"msa-dummy-image",
+         "version":"1.0.0",
+         "description":"Generates images of various sizes on demand."
+      },
+      {
+         "name":"msa-diff-json",
+         "version":"1.0.0",
+         "description":"Compute JSON patches to transform a JSON document A into B."
+      },
+      {
+         "name":"msa-diff-bin",
+         "version":"1.0.0",
+         "description":"Compute patches to transform a binary file A into B."
+      },
+
+      {
+         "name":"msa-compress-fast",
+         "version":"1.0.0",
+         "description":"Compute patches to transform a binary file A into B."
+      },
+      {
+         "name":"msa-compress-strong",
+         "version":"1.0.0",
+         "description":"Compute patches to transform a binary file A into B."
+      },
+      {
+         "name":" msa-compressor",
+         "version":"1.0.0",
+         "description":"Compute patches to transform a binary file A into B."
+      },
+      {
+         "name":"msa-nmap",
+         "version":"1.0.0",
+         "description":"Nmap \"Network Mapper\" is a utility for network discovery and security auditing."
+      }
+   ]
 }

@@ -8,11 +8,26 @@ title: Suggested tools
     <p> </p>
   </div>
 
-  <% data.templates.templates.each do |f| %>
+  <div class="pure-u-1">
+    <h1>Tools for working with docker containers </h1>
+  </div>
+
+  <% data.tools.containers.each do |tool| %>
       <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-          <h1><a href="/microservices/<%= f.name %>"><%= f.name %></a></h1>
-            <p class="ms-description"><%= f.description %></p>
+          <h1><a href="<%= tool.link %>"><%= tool.name %></a></h1>
+            <p class="ms-description"><%= tool.description %></p>
       </div>
   <% end %>
+
+    <div class="pure-u-1">
+      <h1>Tools for working with REST APIs </h1>
+    </div>
+
+    <% data.tools.apis.each do |tool| %>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+            <h1><a href="<%= tool.link %>"><%= tool.name %></a></h1>
+              <p class="ms-description"><%= tool.description %></p>
+        </div>
+    <% end %>
 
 </div>

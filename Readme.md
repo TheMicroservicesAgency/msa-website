@@ -9,8 +9,7 @@ Source code for the website of [the Microservices Agency](http://microservices.a
 
 2. Install bundler: ```gem install bundler```
 
-3. Install Middleman and the other dependencies: ```cd msa-website;
- bundle```
+3. Install Middleman and the other dependencies: ```cd msa-website; bundle```
 
 4. Start Middleman built-in web server: ```middleman serve```
 

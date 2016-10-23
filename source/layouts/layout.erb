@@ -54,12 +54,10 @@
                             <a href="" class="pure-menu-item">Recently added</a>
                         </li>
 
-                        <% data.microservices.microservices.each do |ms| %>
-
+                        <% data.microservices.microservices.slice(0,10).each do |ms| %>
                             <li class="pure-menu-item">
                                 <a href="/microservices/<%= ms.name %>" class="pure-menu-link"><%= ms.name %></a>
                             </li>
-
                         <% end %>
 
                         <li class="pure-menu-item menu-item-divided "></li>
