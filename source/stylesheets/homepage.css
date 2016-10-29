@@ -13,7 +13,7 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #282A2E;
+    background-color: rgba(40, 42, 46, 0.9);
     padding: 30px;
 }
 
@@ -60,4 +60,32 @@ canvas {
   top: 0;
   left: 0;
   z-index: -50;
+}
+
+#subtext {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+
+  .header {
+    font-size: 2.5em;
+    margin-bottom: 0em;
+    padding-bottom: .5em;
+  }
+  #subtext {
+    margin-bottom: .25em;
+  }
+}
+
+@media (max-width: 500px) {
+  a {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  a {
+    font-size: 0.7em;
+  }
 }

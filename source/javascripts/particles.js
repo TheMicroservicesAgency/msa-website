@@ -11,11 +11,13 @@
 
 			tick = 0, //Tick in time
 
+			proportionnalParticleAmount = window.innerHeight / 10;
+
 			//YOU CAN CHANGE OPTIONS HERE. DO NOT REALLY MESS WITH STUFF BELOW THAT
 			opts = { //Options, you can change those
 				backgroundColor: "#1d1f22",
 				particleColor: "#fcfcfc",
-				particleAmount: 200,
+				particleAmount: proportionnalParticleAmount,
 				defaultSpeed: 0.01,
 				addedSpeed: 2,
 				defaultRadius: 2,
