@@ -58,3 +58,15 @@ a:hover {
   font-size: 1.5em;
   margin-right: 0.85em;
 }
+
+/*img {
+  width: 100%;
+}*/
+
+.list {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+    line-height: 2em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}

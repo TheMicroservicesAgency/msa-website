@@ -1,0 +1,20 @@
+{
+	"images": [
+		{
+			"name": "msa-image-python",
+			"description": "Docker image for Python"
+		},
+		{
+			"name": "msa-image-ruby",
+			"description": "Docker image for Ruby"
+		},
+		{
+			"name": "msa-image-java",
+			"description": "Docker image for Java"
+		},
+		{
+			"name": "msa-image-node",
+			"description": "Docker image for Node.JS"
+		}
+	]
+}

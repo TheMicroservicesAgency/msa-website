@@ -1,20 +1,20 @@
 {
 	"templates": [
 		{
-			"name": "Python / Flask",
-			"description": ""
+			"name": "Python + Flask",
+			"description": "Hello world Microservice written in Python, with the <a href=\"http://flask.pocoo.org/\">Flask</a> framework."
 		},
 		{
-			"name": "Ruby / Sinatra",
-			"description": ""
+			"name": "Ruby + Sinatra",
+			"description": "Hello world Microservice written in Ruby, with the <a href=\"http://www.sinatrarb.com/\">Sinatra</a> framework."
 		},
 		{
-			"name": "Java / Spark",
-			"description": ""
+			"name": "Java + Spark",
+			"description": "Hello world Microservice written in Java, with the <a href=\"http://sparkjava.com/\">Spark</a> framework."
 		},
 		{
-			"name": "Node.js / Express",
-			"description": ""
+			"name": "Node + Express",
+			"description": "Hello world Microservice written in Node.JS, with the <a href=\"http://expressjs.com/\">Express</a> framework."
 		}
 	]
 }
