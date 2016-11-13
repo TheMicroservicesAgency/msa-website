@@ -10,11 +10,11 @@
 		},
 		{
 			"name": "msa-image-java",
-			"description": "Docker image for Java"
+			"description": "Work in progress..."
 		},
 		{
 			"name": "msa-image-node",
-			"description": "Docker image for Node.JS"
+			"description": "Work in progress..."
 		}
 	]
 }

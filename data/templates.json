@@ -10,11 +10,11 @@
 		},
 		{
 			"name": "Java + Spark",
-			"description": "Hello world Microservice written in Java, with the <a href=\"http://sparkjava.com/\">Spark</a> framework."
+			"description": "Work in progress..."
 		},
 		{
 			"name": "Node + Express",
-			"description": "Hello world Microservice written in Node.JS, with the <a href=\"http://expressjs.com/\">Express</a> framework."
+			"description": "Work in progress..."
 		}
 	]
 }
