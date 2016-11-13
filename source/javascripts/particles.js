@@ -15,7 +15,8 @@
 
 			//YOU CAN CHANGE OPTIONS HERE. DO NOT REALLY MESS WITH STUFF BELOW THAT
 			opts = { //Options, you can change those
-				backgroundColor: "#1d1f22",
+				// backgroundColor: "#1d1f22",
+				backgroundColor: "#0e0e0e",
 				particleColor: "#fcfcfc",
 				particleAmount: proportionnalParticleAmount,
 				defaultSpeed: 0.01,

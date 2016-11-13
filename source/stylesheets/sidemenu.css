@@ -16,7 +16,6 @@ body {
     transition: all 0.2s ease-out;
 }
 
-
 /* This is the parent `<div>` that contains the menu and the content area. */
 #layout {
     position: relative;
@@ -82,9 +81,13 @@ body {
     bottom: 0;
     z-index: 1000;
     /* so the menu or its navicon stays above all content */
-    background: #242629;
+    /*background: #242629;*/
+    /*background: rgb(10, 10, 10);*/
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    border-right: #424242;
+    border-right-style: solid;
+    border-right-width: 1px;
 }
 
 /* All anchors inside the menu should be styled like this. */
@@ -111,7 +114,7 @@ body {
 
 /* Add that light border to separate items into groups. */
 #menu .pure-menu .menu-item-divided {
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid #424242;;
 }
 
 /* Change color of the anchor links on hover/focus. */
