@@ -1,10 +1,10 @@
 ---
-title: The Microservices Agency Standard
+title: The Standard
 ---
 
 Here is a list of things that you can expect from our microservices.
 
-# 1. 
+# 1.
 
 # 2.
 

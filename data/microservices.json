@@ -40,17 +40,6 @@
          "version":"1.0.0",
          "description":"Compute patches to transform a binary file A into B."
       },
-
-      {
-         "name":"msa-compress-fast",
-         "version":"1.0.0",
-         "description":"Compute patches to transform a binary file A into B."
-      },
-      {
-         "name":"msa-compress-strong",
-         "version":"1.0.0",
-         "description":"Compute patches to transform a binary file A into B."
-      },
       {
          "name":" msa-compressor",
          "version":"1.0.0",
