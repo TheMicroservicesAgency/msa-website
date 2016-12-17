@@ -6,11 +6,11 @@ title: How to contribute to the project
 
 Please open an issue on the corresponding Github repository.
 
-A list of all the repos can be found at [https://github.com/TheMicroservicesAgency](https://github.com/TheMicroservicesAgency)
+A list of all the repositories can be found at [https://github.com/TheMicroservicesAgency](https://github.com/TheMicroservicesAgency)
 
 # Security issues
 
-For minor security problems you can just open an issue on Github.
+For minor security problems, you can just open an issue on Github.
 
 For more severe issues please send an email to [admin@microservices.agency](mailto:admin@microservices.agency)
 

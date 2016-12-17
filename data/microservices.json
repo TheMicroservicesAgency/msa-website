@@ -2,38 +2,21 @@
    "microservices":[
       {
          "name":"msa-httpbin",
-         "version":"1.0.0",
-         "description":"HTTP Request & Response Service. Useful for testing HTTP REST tools."
+         "version":"1.0.1",
+         "description":"HTTP Request & Response Service. Useful for testing HTTP REST tools.",
+         "url" : "http://demo.microservices.agency:9901/ms/readme.html"
+      },
+      {
+         "name":"msa-faker",
+         "version":"1.0.1",
+         "description":"Fake data generator. Can generate names, addresses, phone numbers, etc. ",
+         "url" : "http://demo.microservices.agency:9902/ms/readme.html"
       },
       {
          "name":"msa-corpora",
          "version":"1.0.0",
-         "description":"A collection of small corpuses of interesting data."
-      },
-      {
-         "name":"msa-faker",
-         "version":"1.0.0",
-         "description":"Fake data generator. Can generate names, addresses, phone numbers, etc. "
-      },
-      {
-         "name":"msa-patch-json",
-         "version":"1.0.0",
-         "description":"Compute a JSON patch to transform a JSON document A into B."
-      },
-      {
-         "name":"msa-patch-bin",
-         "version":"1.0.0",
-         "description":"Compute a binary patch to transform a binary file A into B."
-      },
-      {
-         "name":"msa-patch-text",
-         "version":"1.0.0",
-         "description":"Compute a text patch to transform a text file A into B."
-      },
-      {
-         "name":"msa-hash",
-         "version":"1.0.0",
-         "description":"One-stop shop for hash functions."
+         "description":"A collection of small corpuses of interesting data.",
+         "url" : "http://demo.microservices.agency:9903/ms/readme.html"
       }
    ]
 }

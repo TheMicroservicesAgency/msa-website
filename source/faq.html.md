@@ -8,61 +8,45 @@ A microservice typically refers to a small piece of software, that only perform
 one or a few tasks, hopefully well.
 
 Complex applications can be then built by combining multiple microservices. This
-way of structuring applications should promote flexibilty and reusability of code.
+way of structuring applications aims to promote flexibility and reusability of code.
 
+# Where can I learn more about microservices ?
 
-# Why do I need microservices ?
-
-Maybe you do, maybe you don't. Microservices are not a silver bullet to all the
-problems of the world of software developement.
-
-However the general concept make sense
-
-# Where I can learn more about microservices ?
-
-Here are the wikipedia pages on [Microservices](https://en.wikipedia.org/wiki/Microservices)
+Here are the Wikipedia pages on [Microservices](https://en.wikipedia.org/wiki/Microservices)
 and [Service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture).
 
-The following two websites also present good explanations of the whole affair :
+The following two websites also present good descriptions :
 [martinfowler.com](http://www.martinfowler.com/articles/microservices.html),
 [microservices.io](http://microservices.io/patterns/microservices.html)
 
 Here are some books about the subject :
 
-* [Building Microservices](https://www.amazon.com/Building-Microservices-Sam-Newman/dp/1491950358)
+* [Building Microservices](https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
 
-* [Production-Ready Microservices](https://www.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975/)
+* [Production-Ready Microservices](https://smile.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975)
 
-* [REST API Design Rulebook](https://www.amazon.com/REST-Design-Rulebook-Mark-Masse-ebook/dp/B005XE5A7Q/)
+* [REST API Design Rulebook](https://smile.amazon.com/REST-Design-Rulebook-Mark-Masse/dp/1449310508)
 
-* [RESTful Web APIs](https://www.amazon.com/RESTful-Web-APIs-Richardson/dp/1449358063)
+* [RESTful Web APIs](https://smile.amazon.com/RESTful-Web-APIs-Services-Changing/dp/1449358063)
 
 # What is a container ?
 
-A container
-
-
-# What is Docker ?
-
-Docker is
+A container is a way of packaging software in order to make execution and deployment easier. The most popular container technology today is [Docker](https://www.docker.com/what-docker), and this is the platform used by this project.
 
 # What is REST ?
 
-REST is
+REST stands for Representational state transfer, a convention for APIs that follows the HTTP standards to provide [*a uniform and predefined set of stateless operations*](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
-# What is the MSA ?
-
-The Microservices Agency (MSA) is
-
+This is the primary way of interacting with the microservices provided here.
 
 # Why did you create the MSA ?
 
-I often see really interesting code, but it's using a different language or framework
+I often see interesting code, but it's using a different language or framework
 than the project I'm currently working on, and integration can be a pain.
 
 Sometimes I look back at old projects of mine, and find it hard to get them
-working again, either because my computer is configured in a different fashion
-and/or I forgot to document a step.
+working again, either because my computer is configured differently and/or I
+forgot to document a step.
 
 This project is a humble attempt to fix those problems.
 
@@ -82,9 +66,9 @@ This project is a humble attempt to fix those problems.
 
 - Provide good enough performance
 
-  - by leveraging techniques such as caching data when it makes sense
+  - by leveraging techniques such as caching when it makes sense
 
-  - by making it possible to throw more servers at the problem, if needed
+  - by making it possible to throw more hardware at the problem, if needed
 
 
 # Can I submit a microservice to the MSA ?
@@ -93,8 +77,6 @@ Absolutely ! Check out the [Contribute](/contribute) page to know how.
 
 # Where can I find templates to create my own microservices ?
 
-All our source code can be found on the following Github page.
+[This page](/templates) provides more information about the templates, how they are structured and how they can be used to create new microservices.
 
-# Why the emphasis on creative applications ?
-
-Simply because I see a lot of very interesting code
+All the source code can be found on the following [Github page](https://github.com/TheMicroservicesAgency).

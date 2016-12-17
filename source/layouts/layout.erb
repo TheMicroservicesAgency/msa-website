@@ -48,7 +48,7 @@
 
                         <% data.microservices.microservices.slice(0,10).each do |ms| %>
                             <li class="pure-menu-item">
-                                <a href="/microservices/<%= ms.name %>" class="pure-menu-link"><%= ms.name %></a>
+                                <a href="<%= ms.url %>" class="pure-menu-link"><%= ms.name %></a>
                             </li>
                         <% end %>
 
