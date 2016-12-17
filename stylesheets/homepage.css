@@ -1,0 +1,90 @@
+
+body {
+    text-align: center;
+    font-size: 1em;
+}
+
+.content {
+    margin-top: 15%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(14, 14, 14, 0.93);
+    padding: 30px;
+    border: #333333;
+    border-style: solid;
+    border-width: 1PX;
+}
+
+.header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.25em;
+    margin-bottom: 0.65em;
+    border-bottom: 1px solid #0bbf4e;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 1em 1em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+a:hover {
+    background: #0bbf4e;
+    color: white;
+    transition: all 0.15s linear;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
+}
+
+#subtext {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+
+  .header {
+    font-size: 2.5em;
+    margin-bottom: 0em;
+    padding-bottom: .5em;
+  }
+  #subtext {
+    margin-bottom: .25em;
+  }
+}
+
+@media (max-width: 500px) {
+  a {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  a {
+    font-size: 0.7em;
+  }
+}

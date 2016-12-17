@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+        <title>Frequently Asked Questions</title>
+
+        <link href="/stylesheets/sidemenu.css" rel="stylesheet" />
+        <link href="/stylesheets/site.css" rel="stylesheet" />
+        <script src="/javascripts/all.js"></script>
+
+    </head>
+
+    <body class="faq faq_index">
+
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Menu toggle -->
+                <span></span>
+                <!-- Hamburger icon -->
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="/">The MSA</a>
+
+                    <ul class="pure-menu-list">
+
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Homepage</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The Standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/templates" class="pure-menu-link">The Templates</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/" class="pure-menu-item">The Microservices</a>
+                        </li>
+
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9901/ms/readme.html" class="pure-menu-link">msa-httpbin</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9902/ms/readme.html" class="pure-menu-link">msa-faker</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9903/ms/readme.html" class="pure-menu-link">msa-corpora</a>
+                            </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Contribute</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/faq" class="pure-menu-link">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+
+                <div class="header">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+
+                <div class="content">
+                    <h1 id="what-is-a-microservice-">What is a microservice ?</h1>
+
+<p>A microservice typically refers to a small piece of software, that only perform
+one or a few tasks, hopefully well.</p>
+
+<p>Complex applications can be then built by combining multiple microservices. This
+way of structuring applications aims to promote flexibility and reusability of code.</p>
+
+<h1 id="where-can-i-learn-more-about-microservices-">Where can I learn more about microservices ?</h1>
+
+<p>Here are the Wikipedia pages on <a href="https://en.wikipedia.org/wiki/Microservices">Microservices</a>
+and <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">Service-oriented architecture</a>.</p>
+
+<p>The following two websites also present good descriptions :
+<a href="http://www.martinfowler.com/articles/microservices.html">martinfowler.com</a>,
+<a href="http://microservices.io/patterns/microservices.html">microservices.io</a></p>
+
+<p>Here are some books about the subject :</p>
+
+<ul>
+  <li>
+    <p><a href="https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358">Building Microservices</a></p>
+  </li>
+  <li>
+    <p><a href="https://smile.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975">Production-Ready Microservices</a></p>
+  </li>
+  <li>
+    <p><a href="https://smile.amazon.com/REST-Design-Rulebook-Mark-Masse/dp/1449310508">REST API Design Rulebook</a></p>
+  </li>
+  <li>
+    <p><a href="https://smile.amazon.com/RESTful-Web-APIs-Services-Changing/dp/1449358063">RESTful Web APIs</a></p>
+  </li>
+</ul>
+
+<h1 id="what-is-a-container-">What is a container ?</h1>
+
+<p>A container is a way of packaging software in order to make execution and deployment easier. The most popular container technology today is <a href="https://www.docker.com/what-docker">Docker</a>, and this is the platform used by this project.</p>
+
+<h1 id="what-is-rest-">What is REST ?</h1>
+
+<p>REST stands for Representational state transfer, a convention for APIs that follows the HTTP standards to provide <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><em>a uniform and predefined set of stateless operations</em></a>.</p>
+
+<p>This is the primary way of interacting with the microservices provided here.</p>
+
+<h1 id="why-did-you-create-the-msa-">Why did you create the MSA ?</h1>
+
+<p>I often see interesting code, but it's using a different language or framework
+than the project I'm currently working on, and integration can be a pain.</p>
+
+<p>Sometimes I look back at old projects of mine, and find it hard to get them
+working again, either because my computer is configured differently and/or I
+forgot to document a step.</p>
+
+<p>This project is a humble attempt to fix those problems.</p>
+
+<h1 id="msa-objectives">MSA Objectives</h1>
+
+<ul>
+  <li>
+    <p>Lower the barrier to entry</p>
+
+    <ul>
+      <li>
+        <p>by providing a quick guide and examples on how to use it</p>
+      </li>
+      <li>
+        <p>by packaging it in a format that can be deployed in less than 5 minutes</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Promote reusability</p>
+
+    <ul>
+      <li>
+        <p>by exposing the functionality over standardized APIs easy to integrate</p>
+      </li>
+      <li>
+        <p>by writing simple software, that do one or very few things, hopefully well</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Provide good enough performance</p>
+
+    <ul>
+      <li>
+        <p>by leveraging techniques such as caching when it makes sense</p>
+      </li>
+      <li>
+        <p>by making it possible to throw more hardware at the problem, if needed</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="can-i-submit-a-microservice-to-the-msa-">Can I submit a microservice to the MSA ?</h1>
+
+<p>Absolutely ! Check out the <a href="/contribute">Contribute</a> page to know how.</p>
+
+<h1 id="where-can-i-find-templates-to-create-my-own-microservices-">Where can I find templates to create my own microservices ?</h1>
+
+<p><a href="/templates">This page</a> provides more information about the templates, how they are structured and how they can be used to create new microservices.</p>
+
+<p>All the source code can be found on the following <a href="https://github.com/TheMicroservicesAgency">Github page</a>.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/javascripts/side_menu.js"></script>
+    </body>
+</html>

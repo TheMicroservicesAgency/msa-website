@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+        <title>Templates to build microservices</title>
+
+        <link href="/stylesheets/sidemenu.css" rel="stylesheet" />
+        <link href="/stylesheets/site.css" rel="stylesheet" />
+        <script src="/javascripts/all.js"></script>
+
+    </head>
+
+    <body class="templates templates_index">
+
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Menu toggle -->
+                <span></span>
+                <!-- Hamburger icon -->
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="/">The MSA</a>
+
+                    <ul class="pure-menu-list">
+
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Homepage</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The Standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/templates" class="pure-menu-link">The Templates</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/" class="pure-menu-item">The Microservices</a>
+                        </li>
+
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9901/ms/readme.html" class="pure-menu-link">msa-httpbin</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9902/ms/readme.html" class="pure-menu-link">msa-faker</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="http://demo.microservices.agency:9903/ms/readme.html" class="pure-menu-link">msa-corpora</a>
+                            </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Contribute</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/faq" class="pure-menu-link">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+
+                <div class="header">
+                    <h1>Templates to build microservices</h1>
+                </div>
+
+                <div class="content">
+                    <div class="pure-g">
+
+    <div class="pure-u-1">
+
+        <h2>Microservices Templates</h2>
+
+        <p>Here's the list of the current microservices templates. Each one links to a Github repo,
+           that you can clone and modify to create a new microservice.</p>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/Python + Flask">Python + Flask</a>
+        </h1>
+        <p class="ms-description">Hello world Microservice written in Python, with the <a href="http://flask.pocoo.org/">Flask</a> framework.</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/Ruby + Sinatra">Ruby + Sinatra</a>
+        </h1>
+        <p class="ms-description">Hello world Microservice written in Ruby, with the <a href="http://www.sinatrarb.com/">Sinatra</a> framework.</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/Java + Spark">Java + Spark</a>
+        </h1>
+        <p class="ms-description">Work in progress...</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/Node + Express">Node + Express</a>
+        </h1>
+        <p class="ms-description">Work in progress...</p>
+    </div>
+
+    <div class="pure-u-1">
+
+        <p>To make sure your new microservice follows the standard, here is a suggested workflow :</p>
+
+        <ul class="list">
+
+            <li>Change the NAME file with the name of your new microservice.</li>
+
+            <li>Change the README.md file to describe your microservice.</li>
+
+            <li>Change the LICENSE file for your favorite
+                <a href="https://opensource.org/licenses">open-source license</a>.</li>
+
+            <li>Write some code exposing functionality over a RESTful API. This is the hard part.
+               You can find in the FAQ section a list of best practices and various resources.
+            </li>
+
+            <li>Update the swagger.json file to describe your API. The
+                <a href="http://editor.swagger.io/#/">Swagger Editor</a>
+                may help.</li>
+
+            <li>Update the run.sh script to run your microservice.</li>
+
+            <li>Execute the build.sh script to build a Docker image.</li>
+
+            <li>Share your work ! Publish the code on Github and the image to the Docker Hub.</li>
+
+            <li>As you change your microservice over time, update the VERSION file with a new version number, follow
+                <a href="http://semver.org/">the semantic versioning specification</a>.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="pure-u-1">
+        <h2>Container Images</h2>
+        <p>All the microservices are built by reusing a group of Docker images, one for each programming language.
+           They follow a simple msa-image-&lt;language&gt; naming convention.</p>
+
+        <p>Images share a few components, Alpine Linux as the container operating system,
+           Nginx as an embedded web server and caching layer, Swagger for the API documentation.</p>
+    </div>
+
+    <div class="pure-u-1">
+        <p>Example of a reusable container image and some of it's layers :</p>
+        <img class="pure-img" src="images/msa-image.png" alt="This is a "></img>
+    </div>
+
+    <div class="pure-u-1">
+        <p>An example microservice built with the previous image :</p>
+        <img class="pure-img" src="images/msa-template.png"></img>
+    </div>
+
+    <div class="pure-u-1">
+        <p>Here is the list of the Github repositories of the current images, if you want to take a look :</p>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/msa-image-python">msa-image-python</a>
+        </h1>
+        <p class="ms-description">Docker image for Python</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/msa-image-ruby">msa-image-ruby</a>
+        </h1>
+        <p class="ms-description">Docker image for Ruby</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/msa-image-java">msa-image-java</a>
+        </h1>
+        <p class="ms-description">Work in progress...</p>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h1>
+            <a href="/microservices/msa-image-node">msa-image-node</a>
+        </h1>
+        <p class="ms-description">Work in progress...</p>
+    </div>
+
+</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/javascripts/side_menu.js"></script>
+    </body>
+</html>
