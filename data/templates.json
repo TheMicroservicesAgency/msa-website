@@ -2,19 +2,23 @@
 	"templates": [
 		{
 			"name": "Python + Flask",
-			"description": "Hello world Microservice written in Python, with the <a href=\"http://flask.pocoo.org/\">Flask</a> framework."
+			"description": "Hello world Microservice written in Python, with the <a href=\"http://flask.pocoo.org/\">Flask</a> framework.",
+			"url": "https://github.com/TheMicroservicesAgency/msa-template-python"
 		},
 		{
 			"name": "Ruby + Sinatra",
-			"description": "Hello world Microservice written in Ruby, with the <a href=\"http://www.sinatrarb.com/\">Sinatra</a> framework."
+			"description": "Hello world Microservice written in Ruby, with the <a href=\"http://www.sinatrarb.com/\">Sinatra</a> framework.",
+			"url": "https://github.com/TheMicroservicesAgency/msa-template-ruby"
 		},
 		{
 			"name": "Java + Spark",
-			"description": "Work in progress..."
+			"description": "Work in progress...",
+			"url": "http://microservices.agency/templates/"
 		},
 		{
 			"name": "Node + Express",
-			"description": "Work in progress..."
+			"description": "Work in progress...",
+			"url": "http://microservices.agency/templates/"
 		}
 	]
 }

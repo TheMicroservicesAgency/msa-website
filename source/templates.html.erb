@@ -12,12 +12,12 @@ title: Templates to build microservices
            that you can clone and modify to create a new microservice.</p>
     </div>
 
-    <% data.templates.templates.each do |f| %>
+    <% data.templates.templates.each do |template| %>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
         <h1>
-            <a href="/microservices/<%= f.name %>"><%= f.name %></a>
+            <a href="<%= template.url %>"><%= template.name %></a>
         </h1>
-        <p class="ms-description"><%= f.description %></p>
+        <p class="ms-description"><%= template.description %></p>
     </div>
     <% end %>
 
@@ -71,19 +71,19 @@ title: Templates to build microservices
 
     <div class="pure-u-1">
         <p>An example microservice built with the previous image :</p>
-        <%= image_tag 'msa-template.png', :class => 'pure-img' %>        
+        <%= image_tag 'msa-template.png', :class => 'pure-img' %>
     </div>
 
     <div class="pure-u-1">
         <p>Here is the list of the Github repositories of the current images, if you want to take a look :</p>
     </div>
 
-    <% data.images.images.each do |f| %>
+    <% data.images.images.each do |image| %>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
         <h1>
-            <a href="/microservices/<%= f.name %>"><%= f.name %></a>
+            <a href="<%= image.url %>"><%= image.name %></a>
         </h1>
-        <p class="ms-description"><%= f.description %></p>
+        <p class="ms-description"><%= image.description %></p>
     </div>
     <% end %>
 
