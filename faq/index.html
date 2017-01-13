@@ -46,13 +46,13 @@
                         </li>
 
                             <li class="pure-menu-item">
-                                <a href="http://demo.microservices.agency:9901/ms/readme.html" class="pure-menu-link">msa-httpbin</a>
+                                <a href="/microservices/msa-httpbin" class="pure-menu-link">msa-httpbin</a>
                             </li>
                             <li class="pure-menu-item">
-                                <a href="http://demo.microservices.agency:9902/ms/readme.html" class="pure-menu-link">msa-faker</a>
+                                <a href="/microservices/msa-faker" class="pure-menu-link">msa-faker</a>
                             </li>
                             <li class="pure-menu-item">
-                                <a href="http://demo.microservices.agency:9903/ms/readme.html" class="pure-menu-link">msa-corpora</a>
+                                <a href="/microservices/msa-corpora" class="pure-menu-link">msa-corpora</a>
                             </li>
 
                         <li class="pure-menu-item menu-item-divided "></li>
@@ -70,13 +70,14 @@
             </div>
 
             <div id="main">
-
-                <div class="header">
-                    <h1>Frequently Asked Questions</h1>
-                </div>
-
+                
                 <div class="content">
-                    <h1 id="what-is-a-microservice-">What is a microservice ?</h1>
+
+                  <div class="header">
+                      <h1>Frequently Asked Questions</h1>
+                  </div>
+
+                    <h2 id="what-is-a-microservice-">What is a microservice ?</h2>
 
 <p>A microservice typically refers to a small piece of software, that only perform
 one or a few tasks, hopefully well.</p>
@@ -84,7 +85,7 @@ one or a few tasks, hopefully well.</p>
 <p>Complex applications can be then built by combining multiple microservices. This
 way of structuring applications aims to promote flexibility and reusability of code.</p>
 
-<h1 id="where-can-i-learn-more-about-microservices-">Where can I learn more about microservices ?</h1>
+<h2 id="where-can-i-learn-more-about-microservices-">Where can I learn more about microservices ?</h2>
 
 <p>Here are the Wikipedia pages on <a href="https://en.wikipedia.org/wiki/Microservices">Microservices</a>
 and <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">Service-oriented architecture</a>.</p>
@@ -96,31 +97,23 @@ and <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">Servic
 <p>Here are some books about the subject :</p>
 
 <ul>
-  <li>
-    <p><a href="https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358">Building Microservices</a></p>
-  </li>
-  <li>
-    <p><a href="https://smile.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975">Production-Ready Microservices</a></p>
-  </li>
-  <li>
-    <p><a href="https://smile.amazon.com/REST-Design-Rulebook-Mark-Masse/dp/1449310508">REST API Design Rulebook</a></p>
-  </li>
-  <li>
-    <p><a href="https://smile.amazon.com/RESTful-Web-APIs-Services-Changing/dp/1449358063">RESTful Web APIs</a></p>
-  </li>
+  <li><a href="https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358">Building Microservices</a></li>
+  <li><a href="https://smile.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975">Production-Ready Microservices</a></li>
+  <li><a href="https://smile.amazon.com/REST-Design-Rulebook-Mark-Masse/dp/1449310508">REST API Design Rulebook</a></li>
+  <li><a href="https://smile.amazon.com/RESTful-Web-APIs-Services-Changing/dp/1449358063">RESTful Web APIs</a></li>
 </ul>
 
-<h1 id="what-is-a-container-">What is a container ?</h1>
+<h2 id="what-is-a-container-">What is a container ?</h2>
 
 <p>A container is a way of packaging software in order to make execution and deployment easier. The most popular container technology today is <a href="https://www.docker.com/what-docker">Docker</a>, and this is the platform used by this project.</p>
 
-<h1 id="what-is-rest-">What is REST ?</h1>
+<h2 id="what-is-rest-">What is REST ?</h2>
 
 <p>REST stands for Representational state transfer, a convention for APIs that follows the HTTP standards to provide <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><em>a uniform and predefined set of stateless operations</em></a>.</p>
 
 <p>This is the primary way of interacting with the microservices provided here.</p>
 
-<h1 id="why-did-you-create-the-msa-">Why did you create the MSA ?</h1>
+<h2 id="why-did-you-create-the-msa-">Why did you create the MSA ?</h2>
 
 <p>I often see interesting code, but it's using a different language or framework
 than the project I'm currently working on, and integration can be a pain.</p>
@@ -131,52 +124,34 @@ forgot to document a step.</p>
 
 <p>This project is a humble attempt to fix those problems.</p>
 
-<h1 id="msa-objectives">MSA Objectives</h1>
+<h2 id="msa-objectives">MSA Objectives</h2>
 
 <ul>
-  <li>
-    <p>Lower the barrier to entry</p>
-
+  <li>Lower the barrier to entry
     <ul>
-      <li>
-        <p>by providing a quick guide and examples on how to use it</p>
-      </li>
-      <li>
-        <p>by packaging it in a format that can be deployed in less than 5 minutes</p>
-      </li>
+      <li>by providing a quick guide and examples on how to use it</li>
+      <li>by packaging it in a format that can be deployed in less than 5 minutes</li>
     </ul>
   </li>
-  <li>
-    <p>Promote reusability</p>
-
+  <li>Promote reusability
     <ul>
-      <li>
-        <p>by exposing the functionality over standardized APIs easy to integrate</p>
-      </li>
-      <li>
-        <p>by writing simple software, that do one or very few things, hopefully well</p>
-      </li>
+      <li>by exposing the functionality over standardized APIs easy to integrate</li>
+      <li>by writing simple software, that do one or very few things, hopefully well</li>
     </ul>
   </li>
-  <li>
-    <p>Provide good enough performance</p>
-
+  <li>Provide good enough performance
     <ul>
-      <li>
-        <p>by leveraging techniques such as caching when it makes sense</p>
-      </li>
-      <li>
-        <p>by making it possible to throw more hardware at the problem, if needed</p>
-      </li>
+      <li>by leveraging techniques such as caching when it makes sense</li>
+      <li>by making it possible to throw more hardware at the problem, if needed</li>
     </ul>
   </li>
 </ul>
 
-<h1 id="can-i-submit-a-microservice-to-the-msa-">Can I submit a microservice to the MSA ?</h1>
+<h2 id="can-i-submit-a-microservice-to-the-msa-">Can I submit a microservice to the MSA ?</h2>
 
 <p>Absolutely ! Check out the <a href="/contribute">Contribute</a> page to know how.</p>
 
-<h1 id="where-can-i-find-templates-to-create-my-own-microservices-">Where can I find templates to create my own microservices ?</h1>
+<h2 id="where-can-i-find-templates-to-create-my-own-microservices-">Where can I find templates to create my own microservices ?</h2>
 
 <p><a href="/templates">This page</a> provides more information about the templates, how they are structured and how they can be used to create new microservices.</p>
 

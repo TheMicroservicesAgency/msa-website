@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <meta name="description" content="Providing open source RESTful microservices in containers.">
+
+        <title>msa-faker</title>
+
+        <link href="/stylesheets/sidemenu.css" rel="stylesheet" />
+        <link href="/stylesheets/site.css" rel="stylesheet" />
+    </head>
+
+    <body class="microservices microservices_msa-faker microservices_msa-faker_index">
+
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Menu toggle -->
+                <span></span>
+                <!-- Hamburger icon -->
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="/">The MSA</a>
+
+                    <ul class="pure-menu-list">
+
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Homepage</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The Standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/templates" class="pure-menu-link">The Templates</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/" class="pure-menu-item">The Microservices</a>
+                        </li>
+
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-httpbin" class="pure-menu-link">msa-httpbin</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-faker" class="pure-menu-link">msa-faker</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-corpora" class="pure-menu-link">msa-corpora</a>
+                            </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Contribute</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/faq" class="pure-menu-link">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+                
+                <div class="content">
+
+                  <div class="header">
+                      <h1>msa-faker</h1>
+                  </div>
+
+                    <p><a href="https://github.com/TheMicroservicesAgency/msa-faker"><img style="zoom: 1.15; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" /></a></p>
+
+<p>Faker data generator, built around the <a href="https://github.com/stympy/faker">faker</a> ruby gem.</p>
+
+<p>Can generate names, addresses, phone numbers and much more. Also comes with support for various locales.</p>
+
+<h2 id="quick-start">Quick start</h2>
+
+<p>Execute the microservice container with the following command :</p>
+
+<pre><code>docker run -ti -p 9902:80 msagency/msa-faker
+</code></pre>
+
+<h2 id="examples">Example(s)</h2>
+
+<pre><code>$ curl http://localhost:9902/faker/name
+Warren Bins
+
+$  curl http://localhost:9902/faker/name?locale=fr
+Noémie Clement
+
+$ curl http://localhost:9902/faker/address/city?locale=sv
+Östertuna
+</code></pre>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<p>The locale parameter can be optionally supplied to any endpoint to change the locality of the generated data. This has mainly an effect on the endpoints like <strong>/faker/name</strong> and <strong>/faker/address</strong>, but will probably not change anything on endpoints like <strong>/faker/code</strong> or <strong>/faker/internet</strong>. You can check the support for each locale at <a href="https://github.com/stympy/faker/tree/master/lib/locales">https://github.com/stympy/faker/tree/master/lib/locales</a>, and get the list with:</p>
+
+<ul>
+  <li><a href="http://demo.microservices.agency:9902/faker/locales">/faker/locales</a> : Get the list of supported locales</li>
+</ul>
+
+<p>Check out the <a href="http://demo.microservices.agency:9902/swagger/#/">swagger docs</a> for the full list of endpoints. Here are the main ones :</p>
+
+<ul>
+  <li><a href="http://demo.microservices.agency:9902/faker/name">/faker/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/phone-number">/faker/phone-number</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/city">/faker/address/city</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/street-name">/faker/address/street-name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/zip-code">/faker/address/zip-code</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/time-zone">/faker/address/time-zone</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/state">/faker/address/state</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/address/country">/faker/address/country</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/business/credit-card/number">/faker/business/credit-card/number</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/commerce/department">/faker/commerce/department</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/company/name">/faker/company/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/company/catch-phrase">/faker/company/catch-phrase</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/company/duns">/faker/company/duns</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/book/title">/faker/book/title</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/book/author">/faker/book/author</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/book/publisher">/faker/book/publisher</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/educator/university">/faker/educator/university</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/educator/secondary-school">/faker/educator/secondary-school</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/team/name">/faker/team/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/team/sport">/faker/team/sport</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/bitcoin/address">/faker/bitcoin/address</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/codes/isbn">/faker/codes/isbn</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/codes/imei">/faker/codes/imei</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/color/hex">/faker/color/hex</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/color/rgb">/faker/color/rgb</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/color/hsl">/faker/color/hsl</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/internet/email">/faker/internet/email</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/internet/domain-name">/faker/internet/domain-name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/internet/ipv4">/faker/internet/ipv4</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/internet/ipv6">/faker/internet/ipv6</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/file/name">/faker/file/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/file/extension">/faker/file/extension</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/file/mime-type">/faker/file/mime-type</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/hacker/abbreviation">/faker/hacker/abbreviation</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/crypto/md5">/faker/crypto/md5</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/crypto/sha1">/faker/crypto/sha1</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/crypto/sha256">/faker/crypto/sha256</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/app/name">/faker/app/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/slack-emoji">/faker/slack-emoji</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/superhero/name">/faker/superhero/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/starwars/character">/faker/starwars/character</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/starwars/planet">/faker/starwars/planet</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/space/planet">/faker/space/planet</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/space/moon">/faker/space/moon</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/space/agency">/faker/space/agency</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/gameofthrones/character">/faker/gameofthrones/character</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/pokemon/name">/faker/pokemon/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/beer/name">/faker/beer/name</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/beer/alcohol">/faker/beer/alcohol</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/lorem/paragraphs">/faker/lorem/paragraphs</a></li>
+  <li><a href="http://demo.microservices.agency:9902/faker/hipster/paragraphs">/faker/hipster/paragraphs</a></li>
+</ul>
+
+<h2 id="standard-endpoints">Standard endpoints</h2>
+
+<ul>
+  <li><a href="http://demo.microservices.agency:9902/ms/version">/ms/version</a> : returns the version number</li>
+  <li><a href="http://demo.microservices.agency:9902/ms/name">/ms/name</a> : returns the name</li>
+  <li><a href="http://demo.microservices.agency:9902/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
+  <li><a href="http://demo.microservices.agency:9902/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
+  <li><a href="http://demo.microservices.agency:9902/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
+  <li><a href="http://demo.microservices.agency:9902/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
+  <li><a href="http://demo.microservices.agency:9902/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
+  <li><a href="http://demo.microservices.agency:9902/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
+</ul>
+
+<h2 id="about">About</h2>
+
+<p>A project by the <a href="http://microservices.agency">Microservices Agency</a>.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/javascripts/side_menu.js"></script>
+        <script src="/javascripts/analytics.js"></script>
+    </body>
+</html>
