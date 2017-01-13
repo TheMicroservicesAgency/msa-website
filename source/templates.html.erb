@@ -14,9 +14,9 @@ title: Templates to build microservices
 
     <% data.templates.templates.each do |template| %>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        <h1>
+        <h2>
             <a href="<%= template.url %>"><%= template.name %></a>
-        </h1>
+        </h2>
         <p class="ms-description"><%= template.description %></p>
     </div>
     <% end %>
@@ -80,9 +80,9 @@ title: Templates to build microservices
 
     <% data.images.images.each do |image| %>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        <h1>
+        <h2>
             <a href="<%= image.url %>"><%= image.name %></a>
-        </h1>
+        </h2>
         <p class="ms-description"><%= image.description %></p>
     </div>
     <% end %>

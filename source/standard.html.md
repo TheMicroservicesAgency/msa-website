@@ -5,20 +5,19 @@ title: The Standard
 Every microservice from the MSA should have the following
 characteristics :
 
-# 1. Fast installation / deployement
+## 1. Fast installation / deployement
 
 It should take less than five minutes to try out a new microservice.
 
 By providing the microservices in the form of containers, they will be executable with a single command. Download of the containers images may take some time, but no additional configuration should be required.
 
-# 2. Documentation and examples
+## 2. Documentation and examples
 
 Every microservice will have a README.md file, explaining what is the  microservice and what it does with a few examples.
 
 The README.md will serve as a quick guide, but machine-readable API documentation such as Swagger.json files will be the comprehensive reference.
 
-
-# 3. Standardized APIs
+## 3. Standardized APIs
 
 All the functionality of the microservices will be provided via RESTful APIs.
 

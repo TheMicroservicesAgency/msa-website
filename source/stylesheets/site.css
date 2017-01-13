@@ -18,19 +18,46 @@ body {
     color: white;
 }
 
+.header {
+  padding-left: 0;
+  text-align: left;
+}
+
+/*@media (min-width: 48em) {
+  .header h1 {
+    padding-left: 0.9em;
+  }
+}*/
+
+
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: 400;
     line-height: 1.25em;
     margin: 0;
     padding-top: 0.75em;
-    padding-bottom: 0.15em;
+    /*padding-bottom: 0.15em;*/
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.15em;
+    font-weight: 400;
+    line-height: 1.25em;
 }
 
 p {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.content li {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
     line-height: 1.5em;
     font-weight: 300;
     margin-bottom: 1em;
@@ -59,4 +86,19 @@ a:hover {
     line-height: 2em;
     font-weight: 300;
     margin-bottom: 1em;
+}
+
+/*code::first-line {
+  line-height: 0px;
+}*/
+
+code {
+    display: block;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1.5;
+    font-size: 1.30em;
+    background-color: black;
+    padding: .8em;
 }
