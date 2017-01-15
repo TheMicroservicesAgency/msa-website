@@ -20,6 +20,13 @@
          "description":"A collection of small corpuses of interesting data.",
          "url" : "/microservices/msa-corpora",
          "demo-url" : "http://demo.microservices.agency:9903/ms/readme.html"
+      },
+      {
+         "name":"msa-world-factbook",
+         "version":"1.0.0",
+         "description":"Semi structured API for the CIA World Factbook, a reference of information for 267 countries.",
+         "url" : "/microservices/msa-world-factbook",
+         "demo-url" : "http://demo.microservices.agency:9904/ms/readme.html"
       }
    ]
 }
