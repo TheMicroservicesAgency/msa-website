@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <meta name="description" content="Providing open source RESTful microservices in containers.">
+
+        <title>msa-world-factbook</title>
+
+        <link href="/stylesheets/sidemenu.css" rel="stylesheet" />
+        <link href="/stylesheets/site.css" rel="stylesheet" />
+    </head>
+
+    <body class="microservices microservices_msa-world-factbook microservices_msa-world-factbook_index">
+
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Menu toggle -->
+                <span></span>
+                <!-- Hamburger icon -->
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="/">The MSA</a>
+
+                    <ul class="pure-menu-list">
+
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Homepage</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/standard" class="pure-menu-link">The Standard</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/templates" class="pure-menu-link">The Templates</a>
+                        </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/microservices/" class="pure-menu-item">The Microservices</a>
+                        </li>
+
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-httpbin" class="pure-menu-link">msa-httpbin</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-faker" class="pure-menu-link">msa-faker</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-corpora" class="pure-menu-link">msa-corpora</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/microservices/msa-world-factbook" class="pure-menu-link">msa-world-factbook</a>
+                            </li>
+
+                        <li class="pure-menu-item menu-item-divided "></li>
+
+                        <li class="pure-menu-item">
+                            <a href="/contribute" class="pure-menu-link">Contribute</a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="/faq" class="pure-menu-link">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+                
+                <div class="content">
+
+                  <div class="header">
+                      <h1>msa-world-factbook</h1>
+                  </div>
+
+                    <p><a href="https://github.com/TheMicroservicesAgency/msa-world-factbook"><img style="zoom: 1.15; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" /></a></p>
+
+<p>Semi structured API for the CIA World Factbook, a reference of information for 267 countries.</p>
+
+<p>Built with the <a href="https://github.com/factbook/factbook">factbook</a> ruby gem.</p>
+
+<h2 id="quick-start">Quick start</h2>
+
+<p>Execute the microservice container with the following command :</p>
+
+<pre><code>docker run -ti -p 9904:80 msagency/msa-world-factbook
+</code></pre>
+
+<h2 id="examples">Example(s)</h2>
+
+<p>To get the list of countries :</p>
+
+<pre><code>$ curl http://localhost:9904/factbook/codes
+{
+  "codes": [
+    {
+      "code": "af",
+      "name": "Afghanistan",
+      "category": "Countries",
+      "region": "South Asia"
+    },
+    {
+      "code": "al",
+      "name": "Albania",
+      "category": "Countries",
+      "region": "Europe"
+    },
+    ...
+</code></pre>
+
+<p>To get the list of attributes :</p>
+
+<pre><code>$ curl http://localhost:9904/factbook/attributes
+{
+  "background": "Background",
+  "location": "Location",
+  "coords": "Geographic coordinates",
+  "map": "Map references",
+  "area": "Area › total",
+  "area-land": "Area › land",
+  "area-water": "Area › water",
+  "area-note": "Area › note",
+</code></pre>
+
+<p>All the data is in text format, but the app will try to extract the numbers from the text for convenience :</p>
+
+<pre><code>$ curl http://localhost:9904/factbook/br/area
+{
+  "country-code": "br",
+  "country-name": "Brazil",
+  "area": {
+    "text": "8,515,770 sq km",
+    "numbers": [
+      8515770.0
+    ]
+  }
+
+
+$ curl http://localhost:9904/factbook/us/area
+{
+  "country-code": "us",
+  "country-name": "United States",
+  "area": {
+    "text": "9,833,517 sq km",
+    "numbers": [
+      9833517.0
+    ]
+  }
+</code></pre>
+
+<p>Without a specific attribute, a summary of all the data for this country will be returned :</p>
+
+<pre><code>$ curl http://localhost:9904/factbook/br
+{
+  "country-code": "br",
+  "country-name": "Brazil",
+  "data": {
+    "Introduction": {
+      "Background": {
+        "text": "Following more than three centuries under Portuguese rule, ..."
+      }
+    },
+    "Geography": {
+      "Location": {
+        "text": "Eastern South America, bordering the Atlantic Ocean"
+      },
+      "Geographic coordinates": {
+        "text": "10 00 S, 55 00 W"
+      },
+      "Map references": {
+        "text": "South America"
+      },
+      ...
+</code></pre>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<ul>
+  <li><a href="http://demo.microservices.agency:9904/factbook/codes">/factbook/codes</a> : Returns the list of country codes</li>
+  <li><a href="http://demo.microservices.agency:9904/factbook/attributes">/factbook/attributes</a> : Returns the list of country attributes</li>
+  <li><a href="http://demo.microservices.agency:9904/factbook/br">/factbook/:code</a> : Returns a summary of all the data for a given country</li>
+  <li><a href="http://demo.microservices.agency:9904/factbook/br/taxes">/factbook/:code/:attribute</a> : Returns the data for the specified attribute for a given country</li>
+</ul>
+
+<h2 id="standard-endpoints">Standard endpoints</h2>
+
+<ul>
+  <li><a href="http://demo.microservices.agency:9904/ms/version">/ms/version</a> : returns the version number</li>
+  <li><a href="http://demo.microservices.agency:9904/ms/name">/ms/name</a> : returns the name</li>
+  <li><a href="http://demo.microservices.agency:9904/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
+  <li><a href="http://demo.microservices.agency:9904/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
+  <li><a href="http://demo.microservices.agency:9904/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
+  <li><a href="http://demo.microservices.agency:9904/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
+  <li><a href="http://demo.microservices.agency:9904/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
+  <li><a href="http://demo.microservices.agency:9904/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
+</ul>
+
+<h2 id="about">About</h2>
+
+<p>A project by the <a href="http://microservices.agency">Microservices Agency</a>.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/javascripts/side_menu.js"></script>
+        <script src="/javascripts/analytics.js"></script>
+    </body>
+</html>
