@@ -18,46 +18,46 @@ Execute the microservice container with the following command :
 
 To get a png image of dimensions 850x50, just specify the size (width x height) in the url :
 
-[/fakeimage/850x100.png](/fakeimage/850x100.png)
+[/fakeimage/850x100.png](http://demo.microservices.agency:9905/fakeimage/850x100.png)
 
 ![Example 1](http://demo.microservices.agency:9905/fakeimage/850x100)
 
 Specify the background color with the color parameter, specify either a color name (the full list is available on the [imagemagick ](http://www.imagemagick.org/script/color.php#color_names) website) :
 
-[/fakeimage/850x100.png?color=DeepSkyBlue](/fakeimage/850x100.png?color=DeepSkyBlue)
+[/fakeimage/850x100.png?color=DeepSkyBlue](http://demo.microservices.agency:9905/fakeimage/850x100.png?color=DeepSkyBlue)
 
 ![Example 2](http://demo.microservices.agency:9905/fakeimage/850x100.png?color=DeepSkyBlue)
 
 Or you can use a hex code, starting with ! instead of # :
 
-[/fakeimage/50x500.jpg?color=!4bfc57](fakeimage/850x100.jpg?color=!4bfc57)
+[/fakeimage/50x500.jpg?color=!4bfc57](http://demo.microservices.agency:9905/fakeimage/850x100.jpg?color=!4bfc57)
 
 ![Example 3](http://demo.microservices.agency:9905/fakeimage/850x100.jpg?color=!4bfc57)
 
 You can also change the text color with the textcolor parameter :
 
-[/fakeimage/850x100.jpg?color=black&textcolor=!43ff00](/fakeimage/850x100.jpg?color=black&textcolor=!43ff00)
+[/fakeimage/850x100.jpg?color=black&textcolor=!43ff00](http://demo.microservices.agency:9905/fakeimage/850x100.jpg?color=black&textcolor=!43ff00)
 
 ![Example 4](http://demo.microservices.agency:9905/fakeimage/850x100.jpg?color=black&textcolor=!43ff00)
 
 ## Endpoints
 
-- [/fakeimage/:resolution](/fakeimage/500x500) : Returns a png image
-- [/fakeimage/:resolution.png](/fakeimage/500x500.png) : Returns a png image
-- [/fakeimage/:resolution.jpg](/fakeimage/500x500.jpg)  : Returns a jpg image
-- [/fakeimage/:resolution.gif](/fakeimage/500x500.gif)  : Returns a gif image
+- [/fakeimage/:resolution](http://demo.microservices.agency:9905/fakeimage/500x500) : Returns a png image
+- [/fakeimage/:resolution.png](http://demo.microservices.agency:9905/fakeimage/500x500.png) : Returns a png image
+- [/fakeimage/:resolution.jpg](http://demo.microservices.agency:9905/fakeimage/500x500.jpg)  : Returns a jpg image
+- [/fakeimage/:resolution.gif](http://demo.microservices.agency:9905/fakeimage/500x500.gif)  : Returns a gif image
 
 
 ## Standard endpoints
 
-- [/ms/version](/ms/version) : returns the version number
-- [/ms/name](/ms/name) : returns the name
-- [/ms/readme.md](/ms/readme.md) : returns the readme (this file)
-- [/ms/readme.html](/ms/readme.html) : returns the readme as html
-- [/swagger/swagger.json](/swagger/swagger.json) : returns the swagger api documentation
-- [/swagger/#/](/swagger/#/) : returns swagger-ui displaying the api documentation
-- [/nginx/stats.json](/nginx/stats.json) : returns stats about Nginx
-- [/nginx/stats.html](/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
+- [/ms/version](http://demo.microservices.agency:9905/ms/version) : returns the version number
+- [/ms/name](http://demo.microservices.agency:9905/ms/name) : returns the name
+- [/ms/readme.md](http://demo.microservices.agency:9905/ms/readme.md) : returns the readme (this file)
+- [/ms/readme.html](http://demo.microservices.agency:9905/ms/readme.html) : returns the readme as html
+- [/swagger/swagger.json](http://demo.microservices.agency:9905/swagger/swagger.json) : returns the swagger api documentation
+- [/swagger/#/](http://demo.microservices.agency:9905/swagger/#/) : returns swagger-ui displaying the api documentation
+- [/nginx/stats.json](http://demo.microservices.agency:9905/nginx/stats.json) : returns stats about Nginx
+- [/nginx/stats.html](http://demo.microservices.agency:9905/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
 
 ## About
 
