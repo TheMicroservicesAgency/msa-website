@@ -34,6 +34,13 @@
          "description":"Dynamic image generator. Can generate png, jpg and gif images at various resolutions.",
          "url" : "/microservices/msa-fakeimage",
          "demo-url" : "http://demo.microservices.agency:9905/ms/readme.html"
+      },
+      {
+         "name":"msa-string-similarity",
+         "version":"1.0.0",
+         "description":"Various algorithms to mesure the similarity of N strings.",
+         "url" : "/microservices/msa-string-similarity",
+         "demo-url" : "http://demo.microservices.agency:9905/ms/readme.html"
       }
    ]
 }
