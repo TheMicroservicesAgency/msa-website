@@ -21,7 +21,7 @@ The following two websites also present good descriptions :
 
 Here are some books about the subject :
 
-* [Building Microservices](https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
+* [Building Microservices](https://smile.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358), there is a free [preview edition courtesy of Nginx](https://www.nginx.com/wp-content/uploads/2015/01/Building_Microservices_Nginx.pdf)
 * [Production-Ready Microservices](https://smile.amazon.com/Production-Ready-Microservices-Standardized-Engineering-Organization/dp/1491965975)
 * [REST API Design Rulebook](https://smile.amazon.com/REST-Design-Rulebook-Mark-Masse/dp/1449310508)
 * [RESTful Web APIs](https://smile.amazon.com/RESTful-Web-APIs-Services-Changing/dp/1449358063)
@@ -35,30 +35,6 @@ A container is a way of packaging software in order to make execution and deploy
 REST stands for Representational state transfer, a convention for APIs that follows the HTTP standards to provide [*a uniform and predefined set of stateless operations*](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
 This is the primary way of interacting with the microservices provided here.
-
-## Why did you create the MSA ?
-
-I often see interesting code, but it's using a different language or framework
-than the project I'm currently working on, and integration can be a pain.
-
-Sometimes I look back at old projects of mine, and find it hard to get them
-working again, either because my computer is configured differently and/or I
-forgot to document a step.
-
-This project is a humble attempt to fix those problems.
-
-## MSA Objectives
-
-- Lower the barrier to entry
-  - by providing a quick guide and examples on how to use it
-  - by packaging it in a format that can be deployed in less than 5 minutes
-
-- Promote reusability
-  - by exposing the functionality over standardized APIs easy to integrate
-  - by writing simple software, that do one or very few things, hopefully well
-- Provide good enough performance
-  - by leveraging techniques such as caching when it makes sense
-  - by making it possible to throw more hardware at the problem, if needed
 
 ## Can I submit a microservice to the MSA ?
 
