@@ -40,7 +40,14 @@
          "version":"1.0.0",
          "description":"Various algorithms to mesure the similarity of N strings.",
          "url" : "/microservices/msa-string-similarity",
-         "demo-url" : "http://demo.microservices.agency:9905/ms/readme.html"
+         "demo-url" : "http://demo.microservices.agency:9906/ms/readme.html"
+      },
+      {
+         "name":"msa-geohash",
+         "version":"1.0.0",
+         "description":"Base32 Geoashing as a service, with geojson support.",
+         "url" : "/microservices/msa-geohash",
+         "demo-url" : "http://demo.microservices.agency:9907/ms/readme.html"
       }
    ]
 }
