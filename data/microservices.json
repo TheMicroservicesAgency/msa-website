@@ -48,6 +48,13 @@
          "description":"Base32 Geoashing as a service, with geojson support.",
          "url" : "/microservices/msa-geohash",
          "demo-url" : "http://demo.microservices.agency:9907/ms/readme.html"
+      },
+      {
+         "name":"msa-geocoder",
+         "version":"1.0.0",
+         "description":"Reverse geocoding as a simple offline service.",
+         "url" : "/microservices/msa-geocoder",
+         "demo-url" : "http://demo.microservices.agency:9908/ms/readme.html"
       }
    ]
 }
