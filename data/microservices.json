@@ -9,7 +9,7 @@
       },
       {
          "name":"msa-faker",
-         "version":"1.0.1",
+         "version":"1.0.2",
          "description":"Fake data generator. Can generate names, addresses, phone numbers, etc. ",
          "url" : "/microservices/msa-faker",
          "demo-url" : "http://demo.microservices.agency:9902/ms/readme.html"
