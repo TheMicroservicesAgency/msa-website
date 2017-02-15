@@ -116,64 +116,64 @@
 <h2 id="endpoints">Endpoints</h2>
 
 <ul>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/">/httpbin/</a> : returns the httpbin original readme, listing all the URLs below :</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/ip">/httpbin/ip</a> returns the origin IP</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/user-agent">/httpbin/user-agent</a> returns the user-agent</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/headers">/httpbin/headers</a> returns the header dict</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/get">/httpbin/get</a> returns GET data</li>
-  <li>/post returns POST data</li>
-  <li>/patch returns PATCH data</li>
-  <li>/put returns PUT data</li>
-  <li>/delete returns DELETE data</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/encoding/utf8">/httpbin/encoding/utf8</a> returns a page containing UTF-8 data</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/gzip">/httpbin/gzip</a> returns gzip-encoded data</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/deflate">/httpbin/deflate</a> returns deflate-encoded data</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/status/418">/httpbin/status/:code</a> returns given HTTP Status code</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/response-headers?Server=httpbin&amp;Content-Type=text%2Fplain%3B+charset%3DUTF-8">/httpbin/response-headers?key=val</a> returns given response headers</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/redirect/6">/httpbin/redirect/:n</a> 302 redirects n times</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/redirect-to?url=foo">/httpbin/redirect-to?url=foo</a> 302 redirects to the foo URL</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/redirect-to?url=foo&amp;status_code=307">/httpbin/redirect-to?url=foo&amp;status_code=307</a> 307 redirects to the foo URL</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/relative-redirect/6">/httpbin/relative-redirect/:n</a> 302 relative redirects n times</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/absolute-redirect/6">/httpbin/absolute-redirect/:n</a> 302 absolute redirects n times</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/cookies">/httpbin/cookies</a> returns cookie data</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/cookies/set?k1=v1&amp;k2=v2">/httpbin/cookies/set?name=value</a> sets one or more simple cookies</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/cookies/delete?k1=&amp;k2=">/httpbin/cookies/delete?name</a> deletes one or more simple cookies</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/basic-auth/user/passwd">/httpbin/basic-auth/:user/:passwd</a> challenges HTTPBasic Auth</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/hidden-basic-auth/user/passwd">/httpbin/hidden-basic-auth/:user/:passwd</a> 404'd BasicAuth</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/digest-auth/auth/user/passwd/MD5">/httpbin/digest-auth/:qop/:user/:passwd/:algorithm</a> challenges HTTP Digest Auth</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/digest-auth/auth/user/passwd/MD5">/httpbin/digest-auth/:qop/:user/:passwd</a> challenges HTTP Digest Auth</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/stream/20">/httpbin/stream/:n</a> streams min(n, 100) lines</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/delay/3">/httpbin/delay/:n</a> delays responding for min(n, 10) seconds</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/drip?duration=5&amp;code=200&amp;numbytes=5">/httpbin/drip?numbytes=n&amp;duration=s&amp;delay=s&amp;code=code</a> Drips data over a duration after an optional initial delay, then (optionally) returns with the given status code.</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/range/1024">/httpbin/range/1024?duration=s&amp;chunk_size=code</a> streams n bytes, and allows specifying a Range header to select a subset of the data. Accepts a chunk_size and request duration parameter.</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/html">/httpbin/html</a> Renders an HTML Page</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/robots.txt">/httpbin/robots.txt</a> returns some robots.txt rules</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/deny">/httpbin/deny</a> denied by robots.txt file</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/cache">/httpbin/cache</a> returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/cache/60">/httpbin/cache/:n</a> sets a Cache-Control header for n seconds</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/bytes/1024">/httpbin/bytes/:n</a> generates n random bytes of binary data, accepts optional seed integer parameter</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/stream-bytes/1024">/httpbin/stream-bytes/:n</a> streams n random bytes of binary data, accepts optional seed and chunk_size integer parameters.</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/links/10">/httpbin/links/:n</a> returns a page containing n HTML links</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/image">/httpbin/image</a> returns a page containing an image based on sent Accept header</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/image/png">/httpbin/image/png</a> returns a page containing a PNG image</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/image/jpeg">/httpbin/image/jpeg</a> returns a page containing a JPEG image</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/image/webp">/httpbin/image/webp</a> returns a page containing a WEBP image</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/image/svg">/httpbin/image/svg</a> returns a page containing a SVG image</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/forms/post">/httpbin/forms/post</a> HTML form that submits to /post</li>
-  <li><a href="http://demo.microservices.agency:9901/httpbin/xml">/httpbin/xml</a> returns some XML</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/">/httpbin/</a> : returns the httpbin original readme, listing all the URLs below :</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/ip">/httpbin/ip</a> returns the origin IP</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/user-agent">/httpbin/user-agent</a> returns the user-agent</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/headers">/httpbin/headers</a> returns the header dict</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/get">/httpbin/get</a> returns GET data</li>
+  <li>POST <a href="">/post</a> returns POST data</li>
+  <li>PATCH <a href="">/patch</a> returns PATCH data</li>
+  <li>PUT <a href="">/put</a> returns PUT data</li>
+  <li>DELETE <a href="">/delete</a> returns DELETE data</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/encoding/utf8">/httpbin/encoding/utf8</a> returns a page containing UTF-8 data</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/gzip">/httpbin/gzip</a> returns gzip-encoded data</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/deflate">/httpbin/deflate</a> returns deflate-encoded data</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/status/418">/httpbin/status/:code</a> returns given HTTP Status code</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/response-headers?Server=httpbin&amp;Content-Type=text%2Fplain%3B+charset%3DUTF-8">/httpbin/response-headers?key=val</a> returns given response headers</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/redirect/6">/httpbin/redirect/:n</a> 302 redirects n times</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/redirect-to?url=foo">/httpbin/redirect-to?url=foo</a> 302 redirects to the foo URL</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/redirect-to?url=foo&amp;status_code=307">/httpbin/redirect-to?url=foo&amp;status_code=307</a> 307 redirects to the foo URL</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/relative-redirect/6">/httpbin/relative-redirect/:n</a> 302 relative redirects n times</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/absolute-redirect/6">/httpbin/absolute-redirect/:n</a> 302 absolute redirects n times</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/cookies">/httpbin/cookies</a> returns cookie data</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/cookies/set?k1=v1&amp;k2=v2">/httpbin/cookies/set?name=value</a> sets one or more simple cookies</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/cookies/delete?k1=&amp;k2=">/httpbin/cookies/delete?name</a> deletes one or more simple cookies</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/basic-auth/user/passwd">/httpbin/basic-auth/:user/:passwd</a> challenges HTTPBasic Auth</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/hidden-basic-auth/user/passwd">/httpbin/hidden-basic-auth/:user/:passwd</a> 404'd BasicAuth</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/digest-auth/auth/user/passwd/MD5">/httpbin/digest-auth/:qop/:user/:passwd/:algorithm</a> challenges HTTP Digest Auth</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/digest-auth/auth/user/passwd/MD5">/httpbin/digest-auth/:qop/:user/:passwd</a> challenges HTTP Digest Auth</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/stream/20">/httpbin/stream/:n</a> streams min(n, 100) lines</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/delay/3">/httpbin/delay/:n</a> delays responding for min(n, 10) seconds</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/drip?duration=5&amp;code=200&amp;numbytes=5">/httpbin/drip?numbytes=n&amp;duration=s&amp;delay=s&amp;code=code</a> Drips data over a duration after an optional initial delay, then (optionally) returns with the given status code.</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/range/1024">/httpbin/range/1024?duration=s&amp;chunk_size=code</a> streams n bytes, and allows specifying a Range header to select a subset of the data. Accepts a chunk_size and request duration parameter.</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/html">/httpbin/html</a> Renders an HTML Page</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/robots.txt">/httpbin/robots.txt</a> returns some robots.txt rules</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/deny">/httpbin/deny</a> denied by robots.txt file</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/cache">/httpbin/cache</a> returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/cache/60">/httpbin/cache/:n</a> sets a Cache-Control header for n seconds</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/bytes/1024">/httpbin/bytes/:n</a> generates n random bytes of binary data, accepts optional seed integer parameter</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/stream-bytes/1024">/httpbin/stream-bytes/:n</a> streams n random bytes of binary data, accepts optional seed and chunk_size integer parameters.</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/links/10">/httpbin/links/:n</a> returns a page containing n HTML links</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/image">/httpbin/image</a> returns a page containing an image based on sent Accept header</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/image/png">/httpbin/image/png</a> returns a page containing a PNG image</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/image/jpeg">/httpbin/image/jpeg</a> returns a page containing a JPEG image</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/image/webp">/httpbin/image/webp</a> returns a page containing a WEBP image</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/image/svg">/httpbin/image/svg</a> returns a page containing a SVG image</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/forms/post">/httpbin/forms/post</a> HTML form that submits to /post</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/httpbin/xml">/httpbin/xml</a> returns some XML</li>
 </ul>
 
 <h2 id="standard-endpoints">Standard endpoints</h2>
 
 <ul>
-  <li><a href="http://demo.microservices.agency:9901/ms/version">/ms/version</a> : returns the version number</li>
-  <li><a href="http://demo.microservices.agency:9901/ms/name">/ms/name</a> : returns the name</li>
-  <li><a href="http://demo.microservices.agency:9901/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
-  <li><a href="http://demo.microservices.agency:9901/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
-  <li><a href="http://demo.microservices.agency:9901/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
-  <li><a href="http://demo.microservices.agency:9901/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
-  <li><a href="http://demo.microservices.agency:9901/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
-  <li><a href="http://demo.microservices.agency:9901/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/ms/version">/ms/version</a> : returns the version number</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/ms/name">/ms/name</a> : returns the name</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
+  <li>GET <a href="http://demo.microservices.agency:9901/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
 </ul>
 
 <h2 id="about">About</h2>

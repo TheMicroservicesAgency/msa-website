@@ -204,23 +204,24 @@ $ curl 'http://localhost:9907/geohash/precision/f25eh9'
 <h2 id="endpoints">Endpoints</h2>
 
 <ul>
-  <li><a href="http://demo.microservices.agency:9907/geohash/encode?lat=45.53617&amp;lon=-73.62075">/geohash/encode/?lat=XX.XX&amp;lon=XX.XX </a> Compute a geohash from the given lat,lon</li>
-  <li><a href="http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4">/geohash/decode/:geohash</a> Decode a geohash, returns a geojson point</li>
-  <li><a href="http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4">/geohash/decode/:geohash?exact=true</a> Decodes a geohash, return a geojson polygon</li>
-  <li><a href="http://demo.microservices.agency:9907/geohash/precision/f25eh9x52jq4">/geohash/precision/:geohash</a> Estimate the precision of a geohash</li>
+  <li>GET <a href="http://demo.microservices.agency:9907/geohash/encode?lat=45.53617&amp;lon=-73.62075">/geohash/encode/?lat=XX.XX&amp;lon=XX.XX </a> Compute a geohash from the given lat,lon</li>
+  <li>POST <a href="">/geohash/encode</a> Computes a geohash from the given geojson point</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4">/geohash/decode/:geohash</a> Decode a geohash, returns a geojson point</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4">/geohash/decode/:geohash?exact=true</a> Decodes a geohash, return a geojson polygon</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/geohash/precision/f25eh9x52jq4">/geohash/precision/:geohash</a> Estimate the precision of a geohash</li>
 </ul>
 
 <h2 id="standard-endpoints">Standard endpoints</h2>
 
 <ul>
-  <li><a href="http://demo.microservices.agency:9907/ms/version">/ms/version</a> : returns the version number</li>
-  <li><a href="http://demo.microservices.agency:9907/ms/name">/ms/name</a> : returns the name</li>
-  <li><a href="http://demo.microservices.agency:9907/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
-  <li><a href="http://demo.microservices.agency:9907/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
-  <li><a href="http://demo.microservices.agency:9907/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
-  <li><a href="http://demo.microservices.agency:9907/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
-  <li><a href="http://demo.microservices.agency:9907/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
-  <li><a href="http://demo.microservices.agency:9907/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/ms/version">/ms/version</a> : returns the version number</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/ms/name">/ms/name</a> : returns the name</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
+  <li>GET  <a href="http://demo.microservices.agency:9907/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
 </ul>
 
 <h2 id="about">About</h2>
