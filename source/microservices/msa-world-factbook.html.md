@@ -99,21 +99,21 @@ Without a specific attribute, a summary of all the data for this country will be
 
 ## Endpoints
 
-- [/factbook/codes](http://demo.microservices.agency:9904/factbook/codes) : Returns the list of country codes
-- [/factbook/attributes](http://demo.microservices.agency:9904/factbook/attributes) : Returns the list of country attributes
-- [/factbook/:code](http://demo.microservices.agency:9904/factbook/br) : Returns a summary of all the data for a given country
-- [/factbook/:code/:attribute](http://demo.microservices.agency:9904/factbook/br/taxes) : Returns the data for the specified attribute for a given country
+- GET  [/factbook/codes](http://demo.microservices.agency:9904/factbook/codes) : Returns the list of country codes
+- GET  [/factbook/attributes](http://demo.microservices.agency:9904/factbook/attributes) : Returns the list of country attributes
+- GET  [/factbook/:code](http://demo.microservices.agency:9904/factbook/br) : Returns a summary of all the data for a given country
+- GET  [/factbook/:code/:attribute](http://demo.microservices.agency:9904/factbook/br/taxes) : Returns the data for the specified attribute for a given country
 
 ## Standard endpoints
 
-- [/ms/version](http://demo.microservices.agency:9904/ms/version) : returns the version number
-- [/ms/name](http://demo.microservices.agency:9904/ms/name) : returns the name
-- [/ms/readme.md](http://demo.microservices.agency:9904/ms/readme.md) : returns the readme (this file)
-- [/ms/readme.html](http://demo.microservices.agency:9904/ms/readme.html) : returns the readme as html
-- [/swagger/swagger.json](http://demo.microservices.agency:9904/swagger/swagger.json) : returns the swagger api documentation
-- [/swagger/#/](http://demo.microservices.agency:9904/swagger/#/) : returns swagger-ui displaying the api documentation
-- [/nginx/stats.json](http://demo.microservices.agency:9904/nginx/stats.json) : returns stats about Nginx
-- [/nginx/stats.html](http://demo.microservices.agency:9904/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
+- GET  [/ms/version](http://demo.microservices.agency:9904/ms/version) : returns the version number
+- GET  [/ms/name](http://demo.microservices.agency:9904/ms/name) : returns the name
+- GET  [/ms/readme.md](http://demo.microservices.agency:9904/ms/readme.md) : returns the readme (this file)
+- GET  [/ms/readme.html](http://demo.microservices.agency:9904/ms/readme.html) : returns the readme as html
+- GET  [/swagger/swagger.json](http://demo.microservices.agency:9904/swagger/swagger.json) : returns the swagger api documentation
+- GET  [/swagger/#/](http://demo.microservices.agency:9904/swagger/#/) : returns swagger-ui displaying the api documentation
+- GET  [/nginx/stats.json](http://demo.microservices.agency:9904/nginx/stats.json) : returns stats about Nginx
+- GET  [/nginx/stats.html](http://demo.microservices.agency:9904/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
 
 ## About
 

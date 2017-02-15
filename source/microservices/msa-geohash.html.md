@@ -104,21 +104,22 @@ By default the /decode function will return the center of the geohash area, howe
 
 ## Endpoints
 
-- [/geohash/encode/?lat=XX.XX&lon=XX.XX ](http://demo.microservices.agency:9907/geohash/encode?lat=45.53617&lon=-73.62075) Compute a geohash from the given lat,lon
-- [/geohash/decode/:geohash](http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4) Decode a geohash, returns a geojson point
-- [/geohash/decode/:geohash?exact=true](http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4) Decodes a geohash, return a geojson polygon
-- [/geohash/precision/:geohash](http://demo.microservices.agency:9907/geohash/precision/f25eh9x52jq4) Estimate the precision of a geohash
+- GET [/geohash/encode/?lat=XX.XX&lon=XX.XX ](http://demo.microservices.agency:9907/geohash/encode?lat=45.53617&lon=-73.62075) Compute a geohash from the given lat,lon
+- POST [/geohash/encode]() Computes a geohash from the given geojson point
+- GET  [/geohash/decode/:geohash](http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4) Decode a geohash, returns a geojson point
+- GET  [/geohash/decode/:geohash?exact=true](http://demo.microservices.agency:9907/geohash/decode/f25eh9x52jq4) Decodes a geohash, return a geojson polygon
+- GET  [/geohash/precision/:geohash](http://demo.microservices.agency:9907/geohash/precision/f25eh9x52jq4) Estimate the precision of a geohash
 
 ## Standard endpoints
 
-- [/ms/version](http://demo.microservices.agency:9907/ms/version) : returns the version number
-- [/ms/name](http://demo.microservices.agency:9907/ms/name) : returns the name
-- [/ms/readme.md](http://demo.microservices.agency:9907/ms/readme.md) : returns the readme (this file)
-- [/ms/readme.html](http://demo.microservices.agency:9907/ms/readme.html) : returns the readme as html
-- [/swagger/swagger.json](http://demo.microservices.agency:9907/swagger/swagger.json) : returns the swagger api documentation
-- [/swagger/#/](http://demo.microservices.agency:9907/swagger/#/) : returns swagger-ui displaying the api documentation
-- [/nginx/stats.json](http://demo.microservices.agency:9907/nginx/stats.json) : returns stats about Nginx
-- [/nginx/stats.html](http://demo.microservices.agency:9907/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
+- GET  [/ms/version](http://demo.microservices.agency:9907/ms/version) : returns the version number
+- GET  [/ms/name](http://demo.microservices.agency:9907/ms/name) : returns the name
+- GET  [/ms/readme.md](http://demo.microservices.agency:9907/ms/readme.md) : returns the readme (this file)
+- GET  [/ms/readme.html](http://demo.microservices.agency:9907/ms/readme.html) : returns the readme as html
+- GET  [/swagger/swagger.json](http://demo.microservices.agency:9907/swagger/swagger.json) : returns the swagger api documentation
+- GET  [/swagger/#/](http://demo.microservices.agency:9907/swagger/#/) : returns swagger-ui displaying the api documentation
+- GET  [/nginx/stats.json](http://demo.microservices.agency:9907/nginx/stats.json) : returns stats about Nginx
+- GET  [/nginx/stats.html](http://demo.microservices.agency:9907/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
 
 ## About
 

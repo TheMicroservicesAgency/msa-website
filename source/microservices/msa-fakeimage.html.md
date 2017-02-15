@@ -42,22 +42,22 @@ You can also change the text color with the textcolor parameter :
 
 ## Endpoints
 
-- [/fakeimage/:resolution](http://demo.microservices.agency:9905/fakeimage/500x500) : Returns a png image
-- [/fakeimage/:resolution.png](http://demo.microservices.agency:9905/fakeimage/500x500.png) : Returns a png image
-- [/fakeimage/:resolution.jpg](http://demo.microservices.agency:9905/fakeimage/500x500.jpg)  : Returns a jpg image
-- [/fakeimage/:resolution.gif](http://demo.microservices.agency:9905/fakeimage/500x500.gif)  : Returns a gif image
+- GET [/fakeimage/:resolution](http://demo.microservices.agency:9905/fakeimage/500x500) : Returns a png image
+- GET [/fakeimage/:resolution.png](http://demo.microservices.agency:9905/fakeimage/500x500.png) : Returns a png image
+- GET [/fakeimage/:resolution.jpg](http://demo.microservices.agency:9905/fakeimage/500x500.jpg)  : Returns a jpg image
+- GET [/fakeimage/:resolution.gif](http://demo.microservices.agency:9905/fakeimage/500x500.gif)  : Returns a gif image
 
 
 ## Standard endpoints
 
-- [/ms/version](http://demo.microservices.agency:9905/ms/version) : returns the version number
-- [/ms/name](http://demo.microservices.agency:9905/ms/name) : returns the name
-- [/ms/readme.md](http://demo.microservices.agency:9905/ms/readme.md) : returns the readme (this file)
-- [/ms/readme.html](http://demo.microservices.agency:9905/ms/readme.html) : returns the readme as html
-- [/swagger/swagger.json](http://demo.microservices.agency:9905/swagger/swagger.json) : returns the swagger api documentation
-- [/swagger/#/](http://demo.microservices.agency:9905/swagger/#/) : returns swagger-ui displaying the api documentation
-- [/nginx/stats.json](http://demo.microservices.agency:9905/nginx/stats.json) : returns stats about Nginx
-- [/nginx/stats.html](http://demo.microservices.agency:9905/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
+- GET [/ms/version](http://demo.microservices.agency:9905/ms/version) : returns the version number
+- GET [/ms/name](http://demo.microservices.agency:9905/ms/name) : returns the name
+- GET [/ms/readme.md](http://demo.microservices.agency:9905/ms/readme.md) : returns the readme (this file)
+- GET [/ms/readme.html](http://demo.microservices.agency:9905/ms/readme.html) : returns the readme as html
+- GET [/swagger/swagger.json](http://demo.microservices.agency:9905/swagger/swagger.json) : returns the swagger api documentation
+- GET [/swagger/#/](http://demo.microservices.agency:9905/swagger/#/) : returns swagger-ui displaying the api documentation
+- GET [/nginx/stats.json](http://demo.microservices.agency:9905/nginx/stats.json) : returns stats about Nginx
+- GET [/nginx/stats.html](http://demo.microservices.agency:9905/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
 
 ## About
 

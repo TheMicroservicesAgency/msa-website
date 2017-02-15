@@ -16,7 +16,7 @@ Execute the microservice container with the following command :
 
     docker run -ti -p 9908:80 msagency/msa-geocoder
 
-## Examples
+## Example(s)
 
     $ curl "http://localhost:9908/geocoder?lat=45.5017&lon=-73.5673"
     {

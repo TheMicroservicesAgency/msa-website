@@ -72,21 +72,21 @@ Another example, but this time with the Jaro–Winkler distance and the granular
 
 ## Endpoints
 
-- [/similarity]() : computes the similarity between N strings
-- [/similarity/algorithms](http://demo.microservices.agency:9906/similarity/algorithms) : list the supported algorithms
-- [/similarity/references/:algorithm](http://demo.microservices.agency:9906/similarity/references/dist_levenshtein.pdf) : documentation available for a given algorithm
+- POST [/similarity](/) : computes the similarity between N strings
+- GET [/similarity/algorithms](http://demo.microservices.agency:9906/similarity/algorithms) : list the supported algorithms
+- GET [/similarity/references/:algorithm](http://demo.microservices.agency:9906/similarity/references/dist_levenshtein.pdf) : documentation available for a given algorithm
 
 
 ## Standard endpoints
 
-- [/ms/version](http://demo.microservices.agency:9906/ms/version) : returns the version number
-- [/ms/name](http://demo.microservices.agency:9906/ms/name) : returns the name
-- [/ms/readme.md](http://demo.microservices.agency:9906/ms/readme.md) : returns the readme (this file)
-- [/ms/readme.html](http://demo.microservices.agency:9906/ms/readme.html) : returns the readme as html
-- [/swagger/swagger.json](http://demo.microservices.agency:9906/swagger/swagger.json) : returns the swagger api documentation
-- [/swagger/#/](http://demo.microservices.agency:9906/swagger/#/) : returns swagger-ui displaying the api documentation
-- [/nginx/stats.json](http://demo.microservices.agency:9906/nginx/stats.json) : returns stats about Nginx
-- [/nginx/stats.html](http://demo.microservices.agency:9906/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
+- GET [/ms/version](http://demo.microservices.agency:9906/ms/version) : returns the version number
+- GET [/ms/name](http://demo.microservices.agency:9906/ms/name) : returns the name
+- GET [/ms/readme.md](http://demo.microservices.agency:9906/ms/readme.md) : returns the readme (this file)
+- GET [/ms/readme.html](http://demo.microservices.agency:9906/ms/readme.html) : returns the readme as html
+- GET [/swagger/swagger.json](http://demo.microservices.agency:9906/swagger/swagger.json) : returns the swagger api documentation
+- GET [/swagger/#/](http://demo.microservices.agency:9906/swagger/#/) : returns swagger-ui displaying the api documentation
+- GET [/nginx/stats.json](http://demo.microservices.agency:9906/nginx/stats.json) : returns stats about Nginx
+- GET [/nginx/stats.html](http://demo.microservices.agency:9906/nginx/stats.html) : returns a dashboard displaying the stats from Nginx
 
 ## About
 
