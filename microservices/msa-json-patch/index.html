@@ -6,13 +6,13 @@
         <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
         <meta name="description" content="Providing open source RESTful microservices in containers.">
 
-        <title>How to contribute to the project</title>
+        <title>msa-json-patch</title>
 
         <link href="/stylesheets/sidemenu.css" rel="stylesheet" />
         <link href="/stylesheets/site.css" rel="stylesheet" />
     </head>
 
-    <body class="contribute contribute_index">
+    <body class="microservices microservices_msa-json-patch microservices_msa-json-patch_index">
 
         <div id="layout">
             <a href="#menu" id="menuLink" class="menu-link">
@@ -92,26 +92,65 @@
                 <div class="content">
 
                   <div class="header">
-                      <h1>How to contribute to the project</h1>
+                      <h1>msa-json-patch</h1>
                   </div>
 
-                    <h2 id="bugs-reporting">Bugs reporting</h2>
+                    <p><a href="https://github.com/TheMicroservicesAgency/msa-json-patch"><img style="zoom: 1.15; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" /></a></p>
 
-<p>Please open an issue on the corresponding Github repository.</p>
+<p>Microservice to generate a diff (<a href="https://tools.ietf.org/html/rfc6902">RFC 6902</a>) between two json documents A &amp; B, that can be also used to transform/patch document A into document B.</p>
 
-<p>A list of all the repositories can be found at <a href="https://github.com/TheMicroservicesAgency">https://github.com/TheMicroservicesAgency</a></p>
+<p>If you have a given JSON document with a series of updates, this can be used to reduce the amount of data to send over the wire.</p>
 
-<h2 id="security-issues">Security issues</h2>
+<p>Built using <a href="https://pypi.python.org/pypi/jsonpatch">jsonpatch</a>.</p>
 
-<p>For minor security problems, you can just open an issue on Github.</p>
+<h2 id="quick-start">Quick start</h2>
 
-<p>For more severe issues please send an email to <a href="mailto:admin@microservices.agency">admin@microservices.agency</a></p>
+<p>Execute the microservice container with the following command :</p>
 
-<h2 id="feedback-and-suggestions">Feedback and suggestions</h2>
+<pre><code>docker run -ti -p 9909:80 msagency/msa-json-patch
+</code></pre>
 
-<p>Got an idea for a great Microservice ? We would like to hear about it !</p>
+<h2 id="examples">Example(s)</h2>
 
-<p>Send us an email at  <a href="mailto:admin@microservices.agency">admin@microservices.agency</a></p>
+<pre><code>$ curl -X POST "http://localhost:9909/json/diff" -H "Content-Type: application/json" \
+-d '[{"name": "test","val": 10}, {"name": "test","val": 20}]'
+{
+  "data": "[{\"op\": \"replace\", \"value\": 20, \"path\": \"/val\"}]"
+}
+
+$ curl -X POST "http://localhost:9909/json/patch" -H "Content-Type: application/json" \
+-d '[{"name": "test","val": 10}, [{ "op": "replace","path": "/val", "value": 20}]]'
+{
+  "data": {
+    "name": "test",
+    "val": 20
+  }
+}
+</code></pre>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<ul>
+  <li>POST <a href="">/json/diff</a> : Returns a diff between two JSON documents A and B. Expected input is [A,B]</li>
+  <li>POST <a href="">/json/patch</a> : Returns the generated document B from patching the document A. Expected input is [A, patch]</li>
+</ul>
+
+<h2 id="standard-endpoints">Standard endpoints</h2>
+
+<ul>
+  <li>GET <a href="http://demo.microservices.agency:9909/ms/version">/ms/version</a> : returns the version number</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/ms/name">/ms/name</a> : returns the name</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/ms/readme.md">/ms/readme.md</a> : returns the readme (this file)</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/ms/readme.html">/ms/readme.html</a> : returns the readme as html</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/swagger/swagger.json">/swagger/swagger.json</a> : returns the swagger api documentation</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/swagger/#/">/swagger/#/</a> : returns swagger-ui displaying the api documentation</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/nginx/stats.json">/nginx/stats.json</a> : returns stats about Nginx</li>
+  <li>GET <a href="http://demo.microservices.agency:9909/nginx/stats.html">/nginx/stats.html</a> : returns a dashboard displaying the stats from Nginx</li>
+</ul>
+
+<h2 id="about">About</h2>
+
+<p>A project by the <a href="http://microservices.agency">Microservices Agency</a>.</p>
 
                 </div>
 
