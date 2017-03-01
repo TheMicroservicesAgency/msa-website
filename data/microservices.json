@@ -55,6 +55,13 @@
          "description":"Reverse geocoding as a simple offline service.",
          "url" : "/microservices/msa-geocoder",
          "demo-url" : "http://demo.microservices.agency:9908/ms/readme.html"
+      },
+      {
+         "name":"msa-json-patch",
+         "version":"1.0.0",
+         "description":"Microservice to generate a diff (rfc 6902) between two json documents.",
+         "url" : "/microservices/msa-json-patch",
+         "demo-url" : "http://demo.microservices.agency:9909/ms/readme.html"
       }
    ]
 }
