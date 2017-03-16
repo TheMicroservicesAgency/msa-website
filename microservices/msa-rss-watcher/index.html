@@ -139,8 +139,9 @@
 <p>If the feed creation is sucessful you will get back the created feed definition, containing a unique ID.
 The ID is the 6 first chars of the SHA256 signature of the feed URL.</p>
 
-<p>In this example the NYTimes RSS feed willl be polled every minute, and new items will trigger a POST request
-to http://requestb.in/1mshtpk1 - a JSON doc containing the item link, title, summary and published time. Example:</p>
+<p>In this example the NYTimes RSS feed willl be polled every 30 seconds, and new items will trigger a
+POST request to http://requestb.in/1mshtpk1 - a JSON doc containing the item link, title, summary and published time.
+Example:</p>
 
 <pre><code>{  
    "data":{  
