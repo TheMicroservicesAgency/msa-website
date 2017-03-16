@@ -41,8 +41,9 @@ To create a new watch for a given feed, you only have to specify the feed URL, h
 If the feed creation is sucessful you will get back the created feed definition, containing a unique ID.
 The ID is the 6 first chars of the SHA256 signature of the feed URL.
 
-In this example the NYTimes RSS feed willl be polled every minute, and new items will trigger a POST request
-to http://requestb.in/1mshtpk1 - a JSON doc containing the item link, title, summary and published time. Example:
+In this example the NYTimes RSS feed willl be polled every 30 seconds, and new items will trigger a
+POST request to http://requestb.in/1mshtpk1 - a JSON doc containing the item link, title, summary and published time.
+Example:
 
     {  
        "data":{  
